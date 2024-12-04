@@ -10,4 +10,32 @@
     2. Finding the largest of the two numbers
     3. Checking whether the given number is Odd or Even
     4. Making a simple calculator for two numbers
-    5. 
+
+## Pattern Problems
+    1. Pattern 1
+        *****
+        *****
+        *****
+        *****
+        *****
+    2.  Pattern 2
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+    3. Pattern 3
+        *
+        **
+        ***
+        ****
+    4. Pattern 4
+        ****
+        ***
+        **
+        *
+    5. Pattern 5
+        1
+        12
+        123
+        1234
