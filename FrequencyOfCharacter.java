@@ -31,5 +31,6 @@ public class FrequencyOfCharacter {
         System.out.println("Enter a String: ");
         String a = sc.nextLine();
         Fequency frequency = new Fequency(a);
+        frequency.check();
     }
 }
