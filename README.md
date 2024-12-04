@@ -9,3 +9,5 @@
     1. Printing Hello World in Java
     2. Finding the largest of the two numbers
     3. Checking whether the given number is Odd or Even
+    4. Making a simple calculator for two numbers
+    5. 
