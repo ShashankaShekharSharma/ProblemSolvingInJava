@@ -20,7 +20,7 @@ class DigitSumCalculator {
     }
 }
 
-public class SumOfDigits {
+public class P16SumOfDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");

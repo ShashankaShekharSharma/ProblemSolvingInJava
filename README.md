@@ -10,6 +10,9 @@
     2. Finding the largest of the two numbers
     3. Checking whether the given number is Odd or Even
     4. Making a simple calculator for two numbers
+    5. Printing the sum of n natural numbers
+    6. Printing the multiplication table of any number
+    7. Printing the sum of digits of a given number
 
 ## Pattern Problems
     1. Pattern 1
