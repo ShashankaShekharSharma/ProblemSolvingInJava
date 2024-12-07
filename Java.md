@@ -117,3 +117,106 @@ public class DeclarativeExample {
     - Need to be careful about dellocating heap storage
 
 ![alt text](image.png)
+
+# Code Refinement
+    Breaking down of code into simpler steps keeping the data structures intact for making it more readable and understandable
+
+# Modularity
+    - Use of refinement to divide solution into components
+    - Build a prototype of each component to validate design
+    - Components are described in terms of
+      - Interfaces: viable to other components (function calls)
+      - Specification: behaviour of the component (visible through interface)
+    - Eg. Function: Interface (function header, arguments and return tyoe) and Specification (intended input output behavior)
+
+# Abstraction in Programming Language
+    - Functions and procedures
+    - Encapsulate a block of code and reuse it in different contexts
+    - Data Abstraction involves abstract data types which has a set of values and along with certain operations permitted on them
+    - Internal representation should not be accessible and interaction should be restricted to private interface only
+# Object Oriented Programming
+    -> Object Oriented Programming was first introduced in a simulation language called Simula in 1960
+
+    -> It involves organising Abstract Data Strucures in a hierarchy and implicit reuse of implementations using subtyping and inheritence
+
+    -> OOP is a data centric view of programming focusing on what data we need to maintain and manipulate
+
+    -> An object is like an abstract dataype - a hidden data with a set of public operations and all interactions are through operations: messages, methods and member function
+
+    -> A class is a template describing the instance variables and methods for an abstract datatype
+
+    -> An object is an instance of a class
+
+    -> We should separate the public interface and the private implementation
+
+## Distinguishing features of Object Oriented Programming:
+    - Abstraction: public interface, private implementation
+    - Subtyping: hierarchy of types, compatibility of interfaces
+    - Dynamic Lookup: choices of method implementation is determined at runtime
+    - Inheritance: reuse of implementations 
+
+# Introduction to Java
+   - All codes in Java lives within a class
+   - Function defined inside the classes are attatched to objects
+   - `System` is a public class
+   - `out` is a stream object defined in System
+   - The `static` modifer signifies that the function can exist independent of dynamic creaition of objects
+   - In `system.out.println`, the out is a stram object
+   - `println()` is a method associated with streams
+   - A Java Program is a collection of classes with each class defined in a separate file with the same name and extension as java
+   - Java programs are usually interpreted on Java Virutal Machine which provides an uniform execution environment across OS.
+   - Semantics of Java is defined in terms of JVM and is OS independent   
+## Compiling and running Java Code    
+- `javac` compiles into JVM bytecode
+- javac requires the file extension .java
+- java should not be provided file extension .class
+- javac automatically follows dependencies and compiles all classes required
+- In OOP language like Java, all data should be encapsulated as objects
+- Java has 8 primitive scalar data types (these are not objects)
+    1. int, long, short, byte
+    2. float, double
+    3. char
+    4. boolean
+- The size of each type is fixed by JVM
+- Java does automatic garbage collection
+- Arrays and Strings are also objects
+- All classes defined in same directory form part of the same package
+- `this` keyword is a reference to current object
+# Constructors
+- `Constructors` are special functions called when an object is created and its name is same as that of the class
+- Java also allows function overloading (same name, different signatures)
+- If no construtor is defined, Java provides a default constructor with empty arguments
+
+- Constructor is called implicitly to set up an object
+  - Multiple constructors: overloading
+  - Resue: one constructor can call another
+  - Default constructor: if none defined
+  - copy constructor: making a copy of an existing object
+
+
+## Copy Constructors
+    - Create new object from existing ones
+    - takes an object of same type as argument
+        Copies ther instance variables; use object name to distinguish which instance variable is being talked about
+    - private instance variables of argument are visible
+
+# Subclass
+    - extends a parent class
+    - inherits instance variables and methods
+    - can add more instance variables and methods
+    - cannot see private components of a parent class
+    - use super to access constructor of parent class
+    - can also override methods
+    - Dynamic distatch ensures that the most appropiate method is called based on run time identity of the object
+
+> Polymorphism is also called runtime or inheritance polymorphism. It is different from overloading
+
+> Signature of a function is its name and list of argument types
+
+> `Overloading`: multiple methods with different signatures, choice is static
+
+> `Overriding`: multiple methods with same signature, choice is static
+
+> `Dynamic Dispatch`: multiple methods with same signature, choice made at runtime
+
+> Use type casting to overcome static type restrictions
