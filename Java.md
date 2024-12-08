@@ -300,3 +300,55 @@ public class DeclarativeExample {
     There can be more than one type of exception. Catch blocks are tried in sequence.
 
     Exceptions are classes in the Java class hierarchy
+
+# Assertion
+    - It is supposed to flag fatal unrecoverable errors
+    - if you need to flag the error and take corrective action, use exceptions instead
+    - enabled or disabled at runtime
+
+# Diagnostic Messages
+    - typical to generate messages within code for diagnosis
+    - Logs are arranged in hierarchy
+    - can be displayed in different formats
+    - logs can be processed by processed by other code (handlers)
+    - logging is controlled by configuration file
+# Logging Levels
+    There are seven logging levels: SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST
+
+# Deep Copy vs Shallow Copy
+    Bitwise copy is a shallow copy where nested mutable references are copied verbatim
+
+    Deep copy recursively clones nested objects
+
+    To implement clone() clonable interface needs to be called
+
+    clone() is protected by default and it can be overridden to public if needed
+
+# Type Inference
+    - only for local variables
+    - not for instance variable of a class
+    - use of generic var to declare variables 
+    - must be initialised when declared
+    - type is inferred from the initialised value
+    - automatic type inference can avoid redundancy in declarations
+# Functional Interfaces
+    Interfaces that define a single function are called functional interfaces
+# Lambda Expressions
+    Denote anonymous functions
+
+    These are based on Lambda calculus (Alonzo Church) which is a foundational model for computing, parallel to Alan Turing's machines.
+
+    It forms the basis for functional programming languaguages like Lisp, Scheme
+
+    If the lamda expression consists of a single function call, we can pass that function by name --> Method Reference
+
+> Many Languages support higher order functions (passing a function as an argument to another function). In Object Oriented Programming, this is achieved using Interfaces which encapsulate the function to be passed as an object. Java allows functions to be passed directly in place of functional interfaces (interfaces consisting of a single function)
+
+# Stream
+    - Stream Processing is declarative
+    - Processing can be parallelized
+    - Lazy Evaluation is possible
+    - Stream does not store its elements
+    - Stream operations are non destructive
+`Stream.generate` generates a stream from a function. Provides a function that produces values on demand with no argument
+`Stream.iterate()` a stream of dependent values - initial value, function to generate the next value from the previous one and terminate using a predicate
