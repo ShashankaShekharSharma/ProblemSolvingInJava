@@ -220,3 +220,83 @@ public class DeclarativeExample {
 > `Dynamic Dispatch`: multiple methods with same signature, choice made at runtime
 
 > Use type casting to overcome static type restrictions
+
+# Hierarchy in Java
+    - Java does not allow multiple inheritence 
+    - A java class hierarchy forms a tree
+    - The root of the hierarchy is a built in class called object which defines default functions like equals() and toString(). These are implicitly inherited by the class when we write
+    - When we override functions we should be check the signatures
+    - Class Hierarchy provides both subtyping and inheritence
+    - Capabilities of a subtype are a superset of the main type. If B is a subtype of A wherever we require an object of type A we can use an object of type B
+    - Inheritence is a subtype that can reuse code of the main type. B inherits from A if some fucntions for B are written in terms of functions A
+
+# Modifiers in Java
+    - Java uses many modifers in declarations to cover features of OOP
+    - public and private to support encapsulation of data
+    - static for entities defined inside class that exist without creating objects of the class
+    - final for values that cannot be changed. It is usually used for constants.
+    - These modifers can be applied to classes, instance variables and methods
+    - Typically instance variables are private. Method to carry (accessor) and update (mutator) the state are public
+    - Public methods to query and update private instance variables 
+    - use private static instance variables to maintain bookkeeping information across objects
+# Abstract Class
+    - Abstract class forces subclasses to provide a concrete implementation. 
+    - We cannot create objects from a class that has abstract functions. 
+    - Class containing abstract methods have to be abstract.
+# Interface
+    An interface is a purely abstract class with no concrete components. Abstrating is possible only from one class but multiple interfaces can be implemented
+
+    Interfaces are expressed in terms of methods that must be present and it cannot specify the intented behaviour of these function
+
+## Static Function
+    Cannot access instance variable and can be invoked directly or using interface
+## Default Function
+    Provide a default implementation for some functions. Class can override these functions
+    
+> Callbacks are useful when we spawn a class in parallel. Spawned object notifies the owner when it is done
+
+> Polymorphism is an effect of dynamic dispatch
+
+> Polymorphic data structures hold values of an arbitrary type, is homogeneous and should not have to cast return values
+
+> Generics introduce structural polymorphism into Java through type variables
+
+> Classes and functions can have type parameters 
+
+# Reflective Programming
+    Refective Programming or Reflection is the ability of a process to examine, introspect and modify its own structure and behavior
+
+    It involves two components
+    1. Introspection: A program can observe and therefore reason about its own state
+    2. Intercession: A program can modify its execution state or alter its own interpretation or meaning
+
+# The collection interface
+# The list interface
+# The set interface
+# The Queue interface
+
+# Errors in code
+    - User Input
+    - Device Errors
+    - Resource Limitations
+    - Code Errors
+  All exceptions decends from the class throwable which has two branches
+  1. Errors - not programmer's fault
+  2. Exception - two sub-branches
+     1. RunTimeException
+        Programming errors that should have been caught by code
+     2. Checked exceptions
+        Typically user-defined; when code assumptions violated
+
+> Exception Handling: gracefully recover from errors that occur when running code
+
+> Throw an exception: generate an object encapsulating information about error
+
+> Catch an exception: decode the nature of error and take corrective action
+
+# Try Catch
+    Enclose code that may benerate exception in a try block and exception handler in catch block. If try encounters an exception, rest of the code in the block is skipped. If exception matches the type in catch, handler code executes. Otherwise uncaught exception is passed back to the code that called the code.
+
+    There can be more than one type of exception. Catch blocks are tried in sequence.
+
+    Exceptions are classes in the Java class hierarchy
